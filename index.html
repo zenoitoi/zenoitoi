@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larsen // Terminal Node</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+        body { 
+            font-family: 'Space Mono', monospace; 
+            background-color: #0a0a0a; 
+            color: #d1d1d1; 
+        }
+        .crt-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none; z-index: 999;
+        }
+    </style>
+</head>
+<body class="p-8 md:p-24 selection:bg-white selection:text-black">
+    <div class="crt-overlay"></div>
+    
+    <header class="mb-12 border-b border-zinc-800 pb-8">
+        <h1 class="text-2xl font-bold tracking-tighter mb-2">LARSEN_NODE_145</h1>
+        <p class="text-zinc-500 text-sm italic">"The moon is a dead pixel."</p>
+    </header>
+
+    <main class="max-w-3xl space-y-12">
+        <section id="status">
+            <h2 class="text-zinc-400 mb-4">[SYSTEM_STATUS]</h2>
+            <p class="leading-relaxed">
+                Currently mapping the <span class="text-white">θ-data</span> associated with the Maryland sector. 
+                The 100-range "Jamie" variable has been deleted from the active hodge-theater. 
+                Ignoring the fluff. Accessing the absolute.
+            </p>
+        </section>
+
+        <section id="frequency">
+            <h2 class="text-zinc-400 mb-4">[FREQUENCY_CALIBRATION]</h2>
+            <div class="bg-zinc-900 p-4 border-l-2 border-white italic text-sm">
+                "Fitter, happier, more productive... like a cat, tied to a stick, driven into frozen winter shit."
+            </div>
+        </section>
+
+        <section id="research">
+            <h2 class="text-zinc-400 mb-4">[ACTIVE_ARCHIVE]</h2>
+            <ul class="space-y-2 text-sm">
+                <li>-> Arithmetic Topology // Spivak Node</li>
+                <li>-> Inter-Universal Teichmüller Theory IV</li>
+                <li>-> Non-commutative Swing // Rhythmic Topology</li>
+            </ul>
+        </section>
+
+        <section id="log-shell">
+            <h2 class="text-zinc-400 mb-4">[PILOT_MORPHISM]</h2>
+            <p class="text-xs text-zinc-600">
+                01:42 AM. The log-volume is stable. 
+                If you are looking for the "General" section, it was deleted in the harvest.
+            </p>
+        </section>
+    </main>
+
+    <footer class="mt-24 text-[10px] text-zinc-700 uppercase tracking-widest">
+        Terminating Connection // Initial θ-Data Deployed
+    </footer>
+</body>
+</html>
